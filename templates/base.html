@@ -8,6 +8,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="icon" type="image/x-icon" href="../static/img/logo.png" />
+    <link rel="icon" type="image/x-icon" href="../static/style.css" />
+    <title>Espaço Digital</title>
 
     {% block styles %}
     <!-- Bootstrap CSS -->
@@ -26,15 +29,11 @@
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img
-            src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-            alt="logo"
-            width="30"
-            height="24"
-          />
+          <img src="../static/img/logo.png" alt="logo" width="69" height="69" />
         </a>
-        <!-- Categorias Dropdown -->
+        <!-- Dropdowns -->
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <!-- Dropdown categorias -->
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <button
@@ -54,16 +53,39 @@
               </ul>
             </li>
           </ul>
+          <!-- Dropdowns marcas -->
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-dark dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Marcas
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Microsoft</a></li>
+                <li><a class="dropdown-item" href="#">Amazon</a></li>
+                <li><a class="dropdown-item" href="#">Alphabet</a></li>
+                <li><a class="dropdown-item" href="#">NVIDIA</a></li>
+                <li><a class="dropdown-item" href="#">Meta</a></li>
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                <li><a class="dropdown-item" href="#">IBM Brasil</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <!-- Form Pesquisa -->
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
             type="search"
-            placeholder="Search"
+            placeholder="Busque por alguma coisa"
             aria-label="Search"
+            style="min-width: 50vh"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
     </nav>
