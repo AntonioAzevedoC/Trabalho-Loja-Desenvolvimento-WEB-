@@ -12,12 +12,8 @@ app = Flask(__name__)
 def rootRoute():
     return render_template("index.html") # Rendering HTML page
 
-# Rota página de cálculo de equação de 2°
-@app.route('/pageCalc2Grau')
-def renderCalc2Grau():
+# Rota página de produtos
+@app.route('/produtos')
+def renderProdutos():
     return render_template("produtos.html")
 
-# Rota página de cálculo de conversão de fahrenheit
-@app.route('/pageCalcFahr')
-def renderCalcFahr():
-    return render_template("conta.html")
